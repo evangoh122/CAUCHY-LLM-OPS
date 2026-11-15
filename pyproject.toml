@@ -1,0 +1,21 @@
+[project]
+name = "cauchy-llm-ops"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Evan-Goh", email = "eg850@georgetown.edu" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "faker>=40.54.0",
+    "mlflow>=3.18.0",
+    "sdv>=2.2.0",
+]
+
+[project.scripts]
+cauchy-llm-ops = "cauchy_llm_ops:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
